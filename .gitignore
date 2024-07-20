@@ -1,0 +1,8 @@
+node_modules
+.history
+.idea
+src
+package.json
+package-lock.json
+tailwind.config.js
+favicon_package_v0.16.zip
