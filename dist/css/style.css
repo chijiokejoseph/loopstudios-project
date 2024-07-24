@@ -565,8 +565,8 @@ button {
 .text-h1 {
   font-size: 1.5rem;
   line-height: 2.25rem;
-  font-size: clamp(1.5rem, 2.07vw + 1.138rem, 3.125rem);
-  line-height: clamp(2.25rem, 2.309vw + 1.846rem, 4.063rem);
+  font-size: clamp(1.5rem, 2.464vw + 1.069rem, 3.125rem);
+  line-height: clamp(2.25rem, 2.749vw + 1.769rem, 4.063rem);
 }
 
 .nav-li-hover {
