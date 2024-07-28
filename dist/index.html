@@ -14,7 +14,7 @@
   <title>Loopstudios</title>
 </head>
 
-<body class="min-h-dvh overflow-x-hidden flex flex-col items-center">
+<body class="min-h-dvh overflow-x-hidden flex flex-col items-center gap-16 *:w-full">
   <!-- Header -->
   <header class="w-full bg-[url('../assets/images/mobile/image-hero.jpg')] text-white space-y-12 sm:bg-[url('../assets/images/desktop/image-hero.jpg')]">
     <!-- Header Nav -->
@@ -40,5 +40,27 @@
     </div>
     <div class="h-12"></div>
   </header>
+
+  <main class="flex flex-col flex-1 items-center justify-center">
+    <article class="flex flex-col flex-1 w-full items-center justify-center gap-12 *:w-full">
+      <a class="visually-hidden" href=""></a>
+      <!-- Section 1: Description -->
+      <section class="flex items-center justify-center">
+        <!-- Container -->
+        <div class="max-w-5xl min-h-72 relative px-8 space-y-8 md:flex lg:img-clamp">
+          <!-- Image -->
+          <div class="flex p-8 mx-auto max-w-lg flex-5 md:p-0 md:max-w-3xl">
+            <img class="rounded-lg transition duration-500 hover:scale-110 md:rounded-none md:hover:scale-100" src="assets/images/mobile/image-interactive.jpg" alt="">
+          </div>
+          <!-- Text Paragraph -->
+          <div class="text-center px-4 pt-4 space-y-4 sm:absolute md:bg-white md:right-0 md:bottom-0 md:h-fit md:w-1/2 sm:max-h-64">
+            <h2 class="text-3xl uppercase text-gray-700 font-light transition duration-500 hover:text-black">The Leader in Interactive VR</h2>
+            <p class="text-p text-gray-500 font-extralight transition duration-500 hover:text-gray-900">Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe. Our award winning creations have transformed businesses through digital experiences that bind to their brand.</p>
+          </div>
+          <div class="min-w-10 flex-3 hidden md:block"></div>
+        </div>
+      </section>
+    </article>
+  </main>
 </body>
 </html>
