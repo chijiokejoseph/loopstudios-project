@@ -622,11 +622,6 @@ button {
   img {
     transition-duration: 500ms;
   }
-  img:hover {
-    --tw-scale-x: 1.25;
-    --tw-scale-y: 1.25;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
 }
 
 .img-overlay{
@@ -668,7 +663,7 @@ button {
   }
   div::before {
     content: var(--tw-content);
-    --tw-bg-opacity: 0.4;
+    --tw-bg-opacity: 0.55;
   }
   div::after {
     content: var(--tw-content);
@@ -1030,12 +1025,6 @@ button {
   border-radius: 0.125rem;
 }
 
-.after\:w-fit::after {
-  content: var(--tw-content);
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
 .after\:content-\[\'DEEP_EARTH\'\]::after {
   --tw-content: 'DEEP EARTH';
   content: var(--tw-content);
@@ -1117,6 +1106,12 @@ button {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.group:hover .group-hover\:scale-125 {
+  --tw-scale-x: 1.25;
+  --tw-scale-y: 1.25;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 @media (min-width: 400px) {
