@@ -32,7 +32,7 @@
             fill="#FFF" fill-rule="nonzero" />
         </svg>
       </div>
-      <ul class="grid px-4 grid-cols-5 gap-4 font-semibold text-sm nav-li-hover w-fit *:*:block *:*:w-full">
+      <ul class="bg-gradient-to-tr from-purple-500 to-red-500 grid px-4 py-2 grid-cols-5 gap-4 rounded-md w-full font-semibold text-sm nav-li-hover *:*:block *:*:w-full md:w-fit md:from-transparent">
         <li><a href="#">About</a></li>
         <li><a href="#">Careers</a></li>
         <li><a href="#">Events</a></li>
@@ -57,10 +57,11 @@
             fill="#FFF" fill-rule="nonzero" />
         </svg>
       </div>
-      <ul class="flex flex-col flex-shrink-0 items-center border-1 py-2 px-2 border-white w-12 h-12 gap-2 rounded-sm group hover:border-blue-300 *:w-full *:bg-white">
-       <li class="h-1 w-56 rounded-full group-hover:bg-blue-300"></li>
-       <li class="h-1 w-56 rounded-full group-hover:bg-blue-300"></li>
-       <li class="h-1 w-56 rounded-full group-hover:bg-blue-300"></li>
+      <!-- Hamburger Menu Icon -->
+      <ul title="menuItem" class="flex flex-col flex-shrink-0 items-center py-2 px-2 w-12 h-12 gap-2 rounded-sm group transition duration-100 *:w-full *:bg-gradient-to-tr *:from-white *:to-white *:transition *:duration-700">
+       <li class="h-1 w-12 rounded-full group-hover:from-purple-500 group-hover:to-red-500"></li>
+       <li class="h-1 w-12 rounded-full group-hover:from-purple-500 group-hover:to-red-500"></li>
+       <li class="h-1 w-12 rounded-full group-hover:from-purple-500 group-hover:to-red-500"></li>
       </ul>
     </nav>
     <!-- Header Hero -->
@@ -69,10 +70,6 @@
     </div>
     <div class="h-12"></div>
   </header>
-  <!-- Third Header -->
-   <header>
-
-   </header>
 
   <main class="flex flex-col flex-1 items-center justify-center">
     <article class="flex flex-col flex-1 w-full items-center justify-center gap-20 *:w-full">
@@ -287,6 +284,8 @@
       </div>
     </div>
   </footer>
+  
+  <script src="js/index.js"></script>
 </body>
 
 </html>
