@@ -70,6 +70,37 @@
     </div>
     <div class="h-12"></div>
   </header>
+  <!-- Third Header -->
+  <header id="header3" class="bg-black hidden text-white sm:hidden">
+	  <nav class="w-full px-4 py-4 space-y-8">
+		  <!-- Menu Icon Tray -->
+		  <div class="flex justify-end w-full h-12">
+			  <!-- Menu Icon -->
+			  <ul title="menuItem" class="relative w-8 h-12 group">
+				  <li class="bg-gradient-to-tr from-white to-white rounded-full w-8 h-1 absolute bottom-0 left-0 rotate-45 group-hover:from-purple-500 group-hover:to-red-500"></li>
+				  <li class="bg-gradient-to-tr from-white to-rose-300 rounded-full w-8 h-1 absolute bottom-0 left-0 -rotate-45 group-hover:from-purple-500 group-hover:to-red-500"></li>
+			  </ul>
+		  </div>
+		  <!-- Menu Items -->
+		  <ul class="px-4 flex flex-col w-full gap-2 nav-li-hover2">
+			  <li>
+				  <a href="#">About</a>
+			  </li>
+			  <li>
+				  <a href="#">Career</a>
+			  </li>
+			  <li>
+				  <a href="#">Events</a>
+			  </li>
+			  <li>
+				  <a href="#">Products</a>
+			  </li>
+			  <li>
+				  <a href="#">Support</a>
+			  </li>
+		  </ul>
+	  </nav>
+  </header>
 
   <main class="flex flex-col flex-1 items-center justify-center">
     <article class="flex flex-col flex-1 w-full items-center justify-center gap-20 *:w-full">
@@ -86,9 +117,9 @@
           <!-- Text Paragraph -->
           <div
             class="text-center px-8 pt-8 space-y-4 md:absolute md:bg-white md:right-0 md:bottom-[-1px] md:h-fit md:w-1/2 md:max-h-64">
-            <h2 class="text-3xl uppercase text-gray-700 font-light transition duration-500 hover:text-black">The Leader
+            <h2 id="section-1-heading" class="text-3xl uppercase text-gray-700 font-light transition duration-500 hover:text-black">The Leader
               in Interactive VR</h2>
-            <p class="text-p text-gray-500 font-extralight transition duration-500 hover:text-gray-900">Founded in 2011,
+            <p id="section-1-text" class="text-p text-gray-500 font-extralight transition duration-500 hover:text-black hover:font-light">Founded in 2011,
               Loopstudios has been producing world-class virtual reality projects for some of the best companies around
               the globe. Our award-winning creations have transformed businesses through digital experiences that bind
               to their brand.</p>
@@ -286,6 +317,7 @@
   </footer>
   
   <script src="js/index.js" type="module"></script>
+  <script src="js/peer_hover.js" type="module"></script>
 </body>
 
 </html>
