@@ -1,21 +1,38 @@
 'use strict';
 
-let /**@type {NodeListOf<HTMLElement>}*/ menuItems = document.querySelectorAll('[title="menuItem"]');
-let /**@type {HTMLElement}*/ header2 = document.querySelector('[id="header2"]');
-let /**@type {HTMLElement}*/ header3 = document.querySelector('[id="header3"]');
 
-let listener = function() {
+const /**@type {HTMLBodyElement}*/ body = document.querySelector('body');
+const /**@type {NodeListOf<HTMLElement>}*/ menuItems = document.querySelectorAll('[aria-description="menu-item"]');
+const /**@type {HTMLElement}*/ header2 = document.querySelector('[id=header2]');
+const /**@type {HTMLElement}*/ header3 = document.querySelector('[id=header3]');
+
+
+let slideDown = [
+    {transform: 'translateX(-100vh)', offset: 0, easing: 'ease-in'},
+    {transform: 'translateX(-50vh)', offset: 0.5},
+    {transform: 'translateX(0)', offset: 1, easing: 'ease-out'},
+]
+
+let timing = {
+    duration: 200,
+    iterations: 1,
+};
+
+let listener = function () {
+    // If header3 is not being displayed
+    let /**@type {Animation}*/animation = header3.animate(slideDown, timing);
     if (header3.classList.contains('hidden')) {
+        animation.play();
         header3.classList.remove('hidden');
         header2.classList.add('hidden');
     } else {
+        animation.reverse();
         header3.classList.add('hidden');
         header2.classList.remove('hidden');
     }
 }
 
 for (let element of menuItems) {
-    console.log(element);
     element.addEventListener('click', listener);
 }
 
