@@ -1637,6 +1637,11 @@ button {
   scroll-snap-stop: always;
 }
 
+.scroll-mx-0 {
+  scroll-margin-left: 0px;
+  scroll-margin-right: 0px;
+}
+
 .list-inside {
   list-style-position: inside;
 }
