@@ -23,12 +23,12 @@ let listener = function () {
     let /**@type {Animation}*/animation = header3.animate(slideDown, timing);
     if (header3.classList.contains('hidden')) {
         animation.play();
-        header3.classList.remove('hidden');
-        header2.classList.add('hidden');
+        header3.classList.toggle('hidden');
+        header2.classList.toggle('hidden');
     } else {
         animation.reverse();
-        header3.classList.add('hidden');
-        header2.classList.remove('hidden');
+        header3.classList.toggle('hidden');
+        header2.classList.toggle('hidden');
     }
 }
 

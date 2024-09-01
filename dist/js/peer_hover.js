@@ -5,12 +5,12 @@ let /**@type {HTMLParagraphElement}*/ text = document.querySelector('[id=section
 
 
 let listener = function () {
-    heading.classList.remove('text-gray-700');
-    heading.classList.add('text-gray-100');
+    heading.classList.toggle('text-gray-700');
+    heading.classList.toggle('text-gray-200');
 }
 let listener2 = function () {
-    heading.classList.remove('text-gray-100');
-    heading.classList.add('text-gray-700');
+    heading.classList.toggle('text-gray-200');
+    heading.classList.toggle('text-gray-700');
 }
 
 text.addEventListener('mouseenter', listener);
