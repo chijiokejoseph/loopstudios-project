@@ -22,7 +22,7 @@
 </head>
 
 <body
-    class="min-h-dvh min-w-dvw w-full overflow-x-hidden scroll-mx-0 h-fit font-josefin flex flex-col items-center gap-20 *:w-full">
+    class="min-h-dvh w-[100vw] h-fit font-josefin flex flex-col items-center gap-20 *:w-full">
 <!-- Header -->
 <header id="header1"
         class="w-full hidden text-white space-y-12 bg-[url('../assets/images/desktop/image-hero.jpg')] sm:block">
@@ -35,7 +35,8 @@
             fill="#FFF" fill-rule="nonzero"/>
       </svg>
     </div>
-    <ul class="bg-gradient-to-tr from-purple-500 to-red-500 grid px-4 py-2 grid-cols-5 gap-4 rounded-md w-full font-semibold text-sm hover_nav_links *:*:block *:*:w-full md:w-fit md:from-transparent">
+    <ul title="header1-links"
+        class="bg-gradient-to-tr from-purple-500 to-red-500 grid px-4 py-2 grid-cols-5 gap-4 rounded-md w-full font-semibold text-sm hover-nav *:*:block *:*:w-full md:w-fit md:from-transparent">
       <li><a href="#">About</a></li>
       <li><a href="#">Careers</a></li>
       <li><a href="#">Events</a></li>
@@ -45,7 +46,7 @@
   </nav>
   <!-- Header Hero -->
   <div class="p-4 border-2 ml-4 border-gray-200 rounded-sm w-4/6 max-w-lg">
-    <h1 class="font_h1 uppercase">Impressive Experiences That Deliver</h1>
+    <h1 class="font-heading uppercase">Impressive Experiences That Deliver</h1>
   </div>
   <div class="h-12"></div>
 </header>
@@ -64,32 +65,40 @@
     <!-- Hamburger Menu Icon -->
     <menu aria-description="menu-item"
           class="flex flex-col flex-shrink-0 relative items-center py-2 w-8 h-12 gap-2 rounded-sm group transition duration-100 *:w-full *:bg-gradient-to-tr *:from-white *:to-white *:transition *:duration-700 hover:gap-0">
-      <li class="h-1 rounded-full group-hover:absolute group-hover:top-[calc((3rem-0.25rem)/2)] group-hover:from-purple-500 group-hover:to-red-500 group-hover:rotate-[135deg]"></li>
+      <li
+          class="h-1 rounded-full group-hover:absolute group-hover:top-[calc((3rem-0.25rem)/2)] group-hover:from-purple-500 group-hover:to-red-500 group-hover:rotate-[135deg]">
+      </li>
       <li class="h-1 rounded-full group-hover:hidden group-hover:from-purple-500 group-hover:to-red-500"></li>
-      <li class="h-1 rounded-full group-hover:absolute group-hover:top-[calc((3rem-0.25rem)/2)] group-hover:from-purple-500 group-hover:to-red-500 group-hover:rotate-45"></li>
+      <li
+          class="h-1 rounded-full group-hover:absolute group-hover:top-[calc((3rem-0.25rem)/2)] group-hover:from-purple-500 group-hover:to-red-500 group-hover:rotate-45">
+      </li>
     </menu>
   </nav>
   <!-- Header Hero -->
   <div class="p-4 border-2 ml-4 border-gray-200 rounded-sm w-4/6 max-w-lg">
-    <h1 class="font_h1 uppercase">Impressive Experiences That Deliver</h1>
+    <h1 class="font-heading uppercase">Impressive Experiences That Deliver</h1>
   </div>
   <div class="h-12"></div>
 </header>
 
 <!-- Third Header -->
 <header id="header3"
-        class="bg-black opacity-95 hidden text-white sticky top-0 z-40 min-h-dvh sm:hidden">
-  <nav class="bg-black w-full px-4 py-4 space-y-8">
+        class="bg-gradient-to-tr from-black to-gray-950 opacity-95 hidden text-white sticky top-0 z-40 min-h-dvh sm:hidden">
+  <nav class="bg-inherit w-full px-4 py-4 space-y-8">
     <!-- Menu Icon Tray -->
     <div class="flex justify-end w-full h-12">
       <!-- Menu Icon -->
       <menu aria-description="menu-item" class="relative w-8 py-2 h-12 group *:w-full">
-        <li class="bg-gradient-to-tr from-white to-white rounded-full h-1 absolute bottom-0 left-0 rotate-45 group-hover:from-purple-500 group-hover:to-red-500"></li>
-        <li class="bg-gradient-to-tr from-white to-rose-300 rounded-full h-1 absolute bottom-0 left-0 -rotate-45 group-hover:from-purple-500 group-hover:to-red-500"></li>
+        <li
+            class="bg-gradient-to-tr from-white to-white rounded-full h-1 absolute bottom-0 left-0 rotate-45 group-hover:from-purple-500 group-hover:to-red-500">
+        </li>
+        <li
+            class="bg-gradient-to-tr from-white to-rose-300 rounded-full h-1 absolute bottom-0 left-0 -rotate-45 group-hover:from-purple-500 group-hover:to-red-500">
+        </li>
       </menu>
     </div>
     <!-- Menu Items -->
-    <menu class="px-4 flex flex-col w-full gap-2 hover_nav_items">
+    <menu title="header3-menu-links" class="px-4 flex flex-col w-full gap-2 hover-nav">
       <li>
         <a href="#">About</a>
       </li>
@@ -117,7 +126,7 @@
     <!-- Section 1: Description -->
     <section class="flex items-center justify-center">
       <!-- Container -->
-      <div class="max-w-6xl min-h-72 relative px-2 space-y-4 md:px-0 md:flex md:clamp_img">
+      <div class="max-w-6xl min-h-72 relative px-2 space-y-4 md:px-0 md:flex md:clamp-img">
         <!-- Image -->
         <div class="flex p-4 pt-0 mx-auto max-w-lg flex-5 md:p-0 md:max-w-3xl">
           <img class="rounded-lg scale-100 transition duration-500 hover:scale-105 md:rounded-none md:hover:scale-100"
@@ -130,7 +139,7 @@
               class="text-3xl uppercase text-gray-700 font-light transition duration-500 hover:text-black">The Leader
             in Interactive VR</h2>
           <p id="section1-text"
-             class="font_p text-gray-500 font-extralight transition duration-500 hover:text-black hover:font-light">
+             class="font-primary text-gray-500 font-extralight transition duration-500 hover:text-black hover:font-light">
             Founded in 2011,
             Loopstudios has been producing world-class virtual reality projects for some of the best companies around
             the globe. Our award-winning creations have transformed businesses through digital experiences that bind
@@ -145,7 +154,7 @@
       <div class="w-full space-y-12 px-4 xs:px-8 md:px-16">
         <!-- Heading -->
         <div class="flex flex-col gap-4 items-center justify-center sm:flex-row sm:justify-between">
-          <h2 class="font_h1 font-light uppercase text-gray-600">Our Creations</h2>
+          <h2 class="font-heading font-light uppercase text-gray-600">Our Creations</h2>
           <!-- Medium Screens Button -->
           <button
               class="hidden border-2 rounded-md text-slate-700 border-slate-700 hover:border-0 hover:m-0.5 hover:bg-gradient-to-tr hover:from-indigo-500 hover:to-rose-500 hover:text-white sm:block"
@@ -154,8 +163,8 @@
           </button>
         </div>
         <!-- Mobile Image Gallery -->
-        <div
-            class="grid grid-cols-1 gap-6 mx-auto hover_img overlay_img *:rounded-sm *:overflow-hidden sm:grid-cols-2 md:hidden">
+        <div title="section2"
+             class="grid grid-cols-1 gap-6 mx-auto hover-img overlay-img *:rounded-sm *:overflow-hidden sm:grid-cols-2 md:hidden">
           <div class="group after:content-['DEEP_EARTH']">
             <img class="group-hover:scale-125" src="assets/images/mobile/image-deep-earth.jpg"
                  alt="Imagine seeing the Earth as a tiny bouncing ball leading up its own track lines in space. All made possible by VR.">
@@ -190,8 +199,8 @@
           </div>
         </div>
         <!-- Desktop Image Gallery -->
-        <div
-            class="hidden gap-8 hover_img overlay_img *:rounded-sm *:overflow-hidden *:group *:*:w-full md:grid md:grid-cols-4">
+        <div title="section2"
+             class="hidden gap-8 hover-img overlay-img *:rounded-sm *:overflow-hidden *:group *:*:w-full md:grid md:grid-cols-4">
           <div class="group after:content-['DEEP_EARTH']">
             <img class="group-hover:scale-125" src="assets/images/desktop/image-deep-earth.jpg"
                  alt="Imagine seeing the Earth as a tiny bouncing ball leading up its own track lines in space. All made possible by VR.">
@@ -235,21 +244,21 @@
         </div>
       </div>
     </section>
+    <!-- Section 3: Navigation Icon to navigate to the top of the page-->
+    <section class="h-0.5 w-[100vw] relative">
+      <div
+          class="bg-gradient-to-tr fixed z-30 bottom-8 right-8 from-red-500 to-indigo-500 rounded-full w-12 h-12 md:w-8 md:h-8">
+        <a aria-description="nav_handle"
+           class="flex flex-col items-center justify-center w-full h-full rounded-full text-white hover:scale-125"
+           href="#header1">
+          <i class="material-symbols-outlined">
+            keyboard_arrow_up
+          </i>
+        </a>
+      </div>
+    </section>
   </article>
 </main>
-
-<!-- Navigation Icon to navigate to the top of the page-->
-<section class="absolute">
-  <div class="bg-gradient-to-tr fixed bottom-4 z-50 right-4 from-red-500 to-indigo-500 rounded-full w-8 h-8">
-    <a aria-description="nav_handle"
-       class="flex flex-col items-center justify-center w-full h-full rounded-full text-white hover:scale-125"
-       href="#header1">
-      <i class="material-symbols-outlined">
-        keyboard_arrow_up
-      </i>
-    </a>
-  </div>
-</section>
 
 <footer class="flex flex-col flex-1 items-center justify-center bg-black text-white text-sm">
   <!-- Container -->
@@ -263,7 +272,7 @@
               fill="#FFF" fill-rule="nonzero"/>
         </svg>
       </div>
-      <ul class="grid grid-cols-1 gap-4 text-sm hover_footer_links xs:grid-cols-5 sm:gap-8 *:mx-auto">
+      <ul title="footer-links" class="grid grid-cols-1 gap-4 text-sm hover-footer xs:grid-cols-5 sm:gap-8 *:mx-auto">
         <li>
           <a href="#">About</a>
         </li>
@@ -299,8 +308,7 @@
           <div class="flex flex-col items-center justify-center ">
             <svg
                 class="transition duration-500 fill-white rounded-sm group-hover:scale-110 group-hover:fill-black group-hover:bg-white"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24px" height="24px" viewBox="0 0 24 24" xml:space="preserve">
+                xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" xml:space="preserve">
                 <path
                     d="M14.095479,10.316482L22.286354,1h-1.940718l-7.115352,8.087682L7.551414,1H1l8.589488,12.231093L1,23h1.940717  l7.509372-8.542861L16.448587,23H23L14.095479,10.316482z M11.436522,13.338465l-0.871624-1.218704l-6.924311-9.68815h2.981339  l5.58978,7.82155l0.867949,1.218704l7.26506,10.166271h-2.981339L11.436522,13.338465z"/>
               </svg>
