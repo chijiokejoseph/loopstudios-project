@@ -22,7 +22,7 @@
 </head>
 
 <body
-    class="min-h-dvh w-[100vw] h-fit font-josefin flex flex-col items-center gap-20 *:w-full">
+    class="min-h-dvh w-[100vw] overflow-x-clip h-fit font-josefin flex flex-col items-center gap-20 *:w-full">
 <!-- Header -->
 <header id="header1"
         class="w-full hidden text-white space-y-12 bg-[url('../assets/images/desktop/image-hero.jpg')] sm:block">
@@ -247,7 +247,7 @@
     <!-- Section 3: Navigation Icon to navigate to the top of the page-->
     <section class="h-0.5 w-[100vw] relative">
       <div
-          class="bg-gradient-to-tr fixed z-30 bottom-8 right-8 from-red-500 to-indigo-500 rounded-full w-12 h-12 md:w-8 md:h-8">
+          class="bg-gradient-to-tr fixed z-30 bottom-8 right-8 left-[calc(100vw-2rem-3rem)] from-red-500 to-indigo-500 rounded-full w-12 h-12 md:w-8 md:h-8">
         <a aria-description="nav_handle"
            class="flex flex-col items-center justify-center w-full h-full rounded-full text-white hover:scale-125"
            href="#header1">
@@ -260,7 +260,7 @@
   </article>
 </main>
 
-<footer class="flex flex-col flex-1 items-center justify-center bg-black text-white text-sm">
+<footer class="flex flex-col flex-1 items-center justify-center bg-black text-white text-sm mb-0">
   <!-- Container -->
   <div class="px-4 pt-8 pb-12 flex flex-col gap-8 sm:px-8 md:w-full md:flex-row md:justify-between">
     <div class="space-y-4">
